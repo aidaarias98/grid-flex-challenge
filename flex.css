@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*nav bar*/
+nav{
+    width:100%;
+    background-color: tan;
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    padding:0;   
+}
+
+a:link { text-decoration: none; }
+
+/*this is for the right side menu bar*/
+ul{
+    margin: 0;
+    /* margin-right: 100px; */ 
+}
+ul li{
+    float: left;
+    padding:0 15px;
+    list-style: none;
+  font-size: 20px; 
+}
+
+ul li a:hover{
+    color:aqua
+}
+
+a{
+  color: white;}
+
+h1{
+    text-align: center;
+  }
+
+.container{
+    background-color: wheat;
+    display: flex;
+   flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.inputs{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    margin:10px 5px;
+}
+
+button[type=submit]{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding:10px 20px;
+    background-color: black;
+    font-size:17px;
+    border:none;
+    color:tan;
+    cursor:pointer;
+}
+
+
+@media (max-width: 300px)  { 
+    h1{
+        background-color: red;}
+        .container{
+            width:auto;
+            height:auto;
+        }
+}
+
+@media (min-width: 301px) and (max-width: 1024px) {
+    h1{
+        background-color: yellow;
+      width: auto;
+      height: auto;
+    }
+  }
+  @media (min-width: 1025px) {
+    h1 {
+      background-color: blue;
+    }
+    .container{
+      width: auto;
+      height: auto;
+    }
+}
+
+
